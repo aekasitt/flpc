@@ -21,6 +21,11 @@ Repository = "https://github.com/itsmeadarsh2008/flpc.git"
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.4",
+]
+
 [build-system]
 requires = ["maturin>=1.6,<2.0"]
 build-backend = "maturin"
