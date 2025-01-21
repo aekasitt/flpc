@@ -21,6 +21,15 @@ Repository = "https://github.com/itsmeadarsh2008/flpc.git"
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
+[tool.pytest.ini_options]
+addopts = [
+  "--capture=sys",  # capture sysout messages
+  "--strict-markers",
+  "--tb=short",  # traceback
+]
+
+python_files = "*.py"
+testpaths = [ "tests" ]
 [tool.uv]
 dev-dependencies = [
     "pytest>=8.3.4",
