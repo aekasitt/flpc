@@ -18,6 +18,9 @@ Homepage = "https://github.com/itsmeadarsh2008/flpc"
 Repository = "https://github.com/itsmeadarsh2008/flpc.git"
 "Bug Tracker" = "https://github.com/itsmeadarsh2008/flpc/issues"
 
+[tool.bandit.assert_used]
+skips = ["tests/**/*.py"]
+
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
